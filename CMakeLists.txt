@@ -76,7 +76,7 @@ endif()
 #
 ExternalProject_Add(curl
   PREFIX curl
-  URL "https://github.com/curl/curl/archive/refs/heads/master.zip"
+  URL https://github.com/curl/curl/archive/refs/heads/master.zip
   # GIT_REPOSITORY "https://github.com/curl/curl.git"
   # GIT_TAG "curl-7_66_0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/curl/src/curl"
@@ -102,7 +102,7 @@ ExternalProject_Add(curl
 #
 ExternalProject_Add(grpc-repo
   PREFIX grpc-repo
-  URL "https://github.com/grpc/grpc/archive/refs/heads/master.zip"
+  URL https://github.com/grpc/grpc/archive/refs/heads/master.zip
   # GIT_REPOSITORY "https://github.com/grpc/grpc.git"
   # GIT_TAG "v1.48.0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/grpc-repo/src/grpc"
@@ -119,7 +119,7 @@ ExternalProject_Add(grpc-repo
 #
 ExternalProject_Add(nlohmann-json
   PREFIX nlohmann-json
-  URL "https://github.com/nlohmann/json/archive/refs/heads/develop.zip"
+  URL https://github.com/nlohmann/json/archive/refs/heads/develop.zip
   # GIT_REPOSITORY "https://github.com/nlohmann/json.git"
   # GIT_TAG "v3.9.0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/json"
@@ -269,7 +269,7 @@ ExternalProject_Add(grpc
 #
 ExternalProject_Add(libevent
   PREFIX libevent
-  URL "https://github.com/libevent/libevent/archive/refs/heads/master.zip"
+  URL https://github.com/libevent/libevent/archive/refs/heads/master.zip
   # GIT_REPOSITORY "https://github.com/libevent/libevent.git"
   # GIT_TAG "release-2.1.8-stable"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/libevent/src/libevent"
@@ -338,7 +338,7 @@ endif()
 #
 ExternalProject_Add(prometheus-cpp
   PREFIX prometheus-cpp
-  URL "https://github.com/jupp0r/prometheus-cpp/archive/v1.0.1.tar.gz"
+  URL https://github.com/jupp0r/prometheus-cpp/archive/v1.0.1.tar.gz
   URL_HASH SHA256=593e028d401d3298eada804d252bc38d8cab3ea1c9e88bcd72095281f85e6d16
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/prometheus-cpp/src/prometheus-cpp"
   EXCLUDE_FROM_ALL ON
@@ -364,7 +364,7 @@ ExternalProject_Add(prometheus-cpp
 #
 ExternalProject_Add(crc32c
   PREFIX crc32c
-  URL "https://github.com/google/crc32c/archive/refs/heads/main.zip"
+  URL https://github.com/google/crc32c/archive/refs/heads/main.zip
   # GIT_REPOSITORY "https://github.com/google/crc32c.git"
   # GIT_TAG "b9d6e825a1e6783195a6051639179152dac70b3b"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/crc32c/src/crc32c"
@@ -401,7 +401,7 @@ set(GCS_CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH}
 #
 ExternalProject_Add(google-cloud-cpp
   PREFIX google-cloud-cpp
-  URL "https://github.com/googleapis/google-cloud-cpp/archive/refs/heads/main.zip"
+  URL https://github.com/googleapis/google-cloud-cpp/archive/refs/heads/main.zip
   # GIT_REPOSITORY "https://github.com/googleapis/google-cloud-cpp.git"
   # GIT_TAG "v1.42.0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/google-cloud-cpp/src/google-cloud-cpp"
@@ -426,7 +426,7 @@ ExternalProject_Add(google-cloud-cpp
 #
 ExternalProject_Add(azure-storage-cpplite
   PREFIX azure-storage-cpplite
-  URL "https://github.com/Azure/azure-storage-cpplite/archive/refs/heads/master.zip"
+  URL https://github.com/Azure/azure-storage-cpplite/archive/refs/heads/master.zip
   # GIT_REPOSITORY "https://github.com/Azure/azure-storage-cpplite.git"
   # GIT_TAG "v0.3.0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/azure-storage-cpplite/src/azure-storage-cpplite"
@@ -465,7 +465,7 @@ ExternalProject_Add(cnmem
 #
 ExternalProject_Add(aws-sdk-cpp
   PREFIX aws-sdk-cpp
-  URL "https://github.com/aws/aws-sdk-cpp/archive/refs/heads/main.zip"
+  URL https://github.com/aws/aws-sdk-cpp/archive/refs/heads/main.zip
   # GIT_REPOSITORY "https://github.com/aws/aws-sdk-cpp.git"
   # GIT_TAG "1.8.186"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/aws-sdk-cpp/src/aws-sdk-cpp"
